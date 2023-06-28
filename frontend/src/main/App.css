@@ -1,0 +1,50 @@
+:root{
+    --bg-dark: #005482;
+    --header-height: 40px;
+    --aside-width: 200px;
+    --footer-height: 40px;
+    --navegadorFixo-height: 20px;
+
+    --shadow:
+        0 2px 23px 0 rgba(0, 0, 0, 0.1),
+        0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 
+        var(--header-height)
+        var(--navegadorFixo-height)
+        1fr
+        var(--footer-height);
+        grid-template-areas: 
+         "cabecalho"
+         "navegadorFixo"
+         "conteudo"
+         "rodape";
+
+         height: 100vh;  
+}
+
+header.cabecalho {
+    grid-area: cabecalho;
+}
+
+nav.navegadorFixo {
+    grid-area: navegadorFixo;
+}
+
+main.conteudo {
+    grid-area: conteudo;
+}
+
+footer.rodape {
+    grid-area: rodape;
+}

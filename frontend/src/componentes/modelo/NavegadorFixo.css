@@ -1,0 +1,8 @@
+nav.navegadorFixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(72, 73, 79);
+    color: white;
+    font-size: 11px;
+}
